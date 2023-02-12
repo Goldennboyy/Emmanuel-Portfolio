@@ -51,14 +51,14 @@ function Navbar() {
 
           {currentTheme === "dark" ? (
             <button
-              className="p-2 text-black border-black rounded-xl bg-slate-100"
+              className="p-2 text-black border-black rounded-full bg-amber-400"
               onClick={() => setTheme("light")}
             >
               <RiMoonLine size={20} color="black" />
             </button>
           ) : (
             <button
-              className="p-2 text-black rounded-xl bg-slate-100"
+              className="p-2 text-black bg-purple-400 rounded-full "
               onClick={() => setTheme("dark")}
             >
               <RiMoonFill size={20} />

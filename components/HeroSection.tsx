@@ -9,7 +9,7 @@ function HeroSection() {
     <section className="flex flex-row items-center justify-center py-32 max-w-8xl">
       <div className="flex flex-col items-center mt-12">
         <Image
-          className="object-cover border-black rounded-full"
+          className="object-cover rounded-full"
           src={profile}
           alt="Emmanuel's Image"
           width={150}
