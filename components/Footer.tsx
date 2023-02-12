@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="max-w-4xl px-4 mx-auto mt-48 md:max-w-5xl ">
+    <footer className="w-full max-w-4xl px-4 mx-auto  mt-30 md:max-w-5xl">
       <div className="flex flex-row items-center justify-center space-x-1 text-sm">
         <span>© 2023 </span>
         <a href="/">

@@ -12,17 +12,17 @@ function Navbar() {
   const NAV_ITEMS: Array<NavItemsProps> = [
     {
       label: "Home",
-      page: "home",
+      page: "/",
     },
 
     {
       label: "About",
-      page: "about",
+      page: "/about",
     },
 
     {
       label: "Projects",
-      page: "projects",
+      page: "/projects",
     },
   ];
 
@@ -43,7 +43,11 @@ function Navbar() {
         <div className="md:flex md:space-x-6">
           {NAV_ITEMS.map((item, index) => {
             return (
-              <a className="text-teal-500 hover:text-orange-400" key={index}>
+              <a
+                href={item.page}
+                className="text-teal-500 hover:text-orange-400"
+                key={index}
+              >
                 {item.label}
               </a>
             );
@@ -58,7 +62,7 @@ function Navbar() {
             </button>
           ) : (
             <button
-              className="p-2 text-black bg-purple-400 rounded-full "
+              className="p-2 text-black bg-purple-400 border-black rounded-full "
               onClick={() => setTheme("dark")}
             >
               <RiMoonFill size={20} />

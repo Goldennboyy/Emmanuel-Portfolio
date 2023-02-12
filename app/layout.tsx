@@ -16,7 +16,7 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className="dark:bg-zinc-800">
+      <body className="relative min-h-screen dark:bg-zinc-800">
         <ThemeProvider enableSystem={true} attribute="class">
           <Navbar />
           {children}
