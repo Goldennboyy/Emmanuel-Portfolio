@@ -1,8 +1,10 @@
+"use client";
+
 import React from "react";
 
 function Footer() {
   return (
-    <footer className="relative bottom-0 w-full max-w-4xl px-4 mx-auto md:max-w-5xl">
+    <footer className="relative bottom-0 w-full h-5 max-w-4xl px-4 mx-auto md:max-w-5xl">
       <div className="flex flex-row items-center justify-center space-x-1 text-sm">
         <span>© 2023 </span>
         <a href="/">

@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import profile from "../public/Images/profile.jpg";
@@ -28,12 +29,12 @@ function HeroSection() {
         <div className="items-center justify-center">
           <div className="flex flex-row mt-5 space-x-5 text-teal-500">
             <a href="/about">
-              <button className="w-16 h-10 text-center rounded-lg bg-slate-100 dark:bg-gray-600 hover:text-orange-400">
+              <button className="w-16 h-10 text-center rounded-lg bg-slate-300/50 dark:bg-gray-600 hover:text-orange-400 ">
                 About
               </button>
             </a>
             <a href="/projects">
-              <button className="w-16 h-10 text-center rounded-lg bg-slate-100 dark:bg-gray-600 hover:text-orange-400">
+              <button className="w-16 h-10 text-center rounded-lg bg-slate-300/50 dark:bg-gray-600 hover:text-orange-400">
                 Projects
               </button>
             </a>

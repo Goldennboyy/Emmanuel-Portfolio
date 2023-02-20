@@ -1,11 +1,10 @@
+"use client";
+
+import { Skillprops } from "@/lib/interface";
 import React from "react";
 import { BsCheckCircleFill } from "react-icons/bs";
 
 function Skills() {
-  interface Skillprops {
-    skill_tool: string;
-  }
-
   const skills_tools: Array<Skillprops> = [
     {
       skill_tool: "Java",
@@ -30,7 +29,7 @@ function Skills() {
       skill_tool: "Typescript",
     },
     {
-      skill_tool: "git",
+      skill_tool: "Git",
     },
     {
       skill_tool: "Firebase",

@@ -1,8 +1,10 @@
+"use client";
+
 import About from "@/components/About";
 import Skills from "@/components/Skills";
 import React from "react";
 
-function page() {
+function AboutPage() {
   return (
     <main className="min-h-screen">
       <About />
@@ -11,4 +13,4 @@ function page() {
   );
 }
 
-export default page;
+export default AboutPage;

@@ -2,13 +2,9 @@
 import React from "react";
 import { useTheme } from "next-themes";
 import { RiMoonFill, RiMoonLine } from "react-icons/ri";
+import { NavItemsProps } from "@/lib/interface";
 
 function Navbar() {
-  interface NavItemsProps {
-    label: string;
-    page: string;
-  }
-
   const NAV_ITEMS: Array<NavItemsProps> = [
     {
       label: "Home",
@@ -45,7 +41,7 @@ function Navbar() {
             return (
               <a
                 href={item.page}
-                className="text-teal-500 hover:text-orange-400"
+                className="text-teal-500 rounded-lg hover:text-orange-400 focus:outline-none focus:ring focus:bg-teal-500 focus:text-orange-400"
                 key={index}
               >
                 {item.label}

@@ -1,3 +1,5 @@
+"use client";
+
 import HeroSection from "@/components/HeroSection";
 import React from "react";
 

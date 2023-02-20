@@ -1,5 +1,6 @@
+"use client";
+
 import React from "react";
-import Skills from "@/components/Skills";
 
 function About() {
   return (
