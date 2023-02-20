@@ -36,7 +36,7 @@ function Navbar() {
         <div>
           <div className="md:py-5 md:block">
             <h2 className="text-2xl font-bold text-teal-500 hover:text-orange-400">
-              Emmanuel Ezeagwula
+              <a href="/">Emmanuel Ezeagwula</a>
             </h2>
           </div>
         </div>
@@ -58,11 +58,11 @@ function Navbar() {
               className="p-2 text-black border-black rounded-full bg-amber-400"
               onClick={() => setTheme("light")}
             >
-              <RiMoonLine size={20} color="black" />
+              <RiMoonLine size={20} />
             </button>
           ) : (
             <button
-              className="p-2 text-black bg-purple-400 border-black rounded-full "
+              className="p-2 text-black bg-purple-400 border-black rounded-full"
               onClick={() => setTheme("dark")}
             >
               <RiMoonFill size={20} />

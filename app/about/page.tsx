@@ -1,10 +1,12 @@
 import About from "@/components/About";
+import Skills from "@/components/Skills";
 import React from "react";
 
 function page() {
   return (
-    <main>
+    <main className="min-h-screen">
       <About />
+      <Skills />
     </main>
   );
 }

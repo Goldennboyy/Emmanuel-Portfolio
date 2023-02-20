@@ -1,0 +1,87 @@
+import React from "react";
+import { BsCheckCircleFill } from "react-icons/bs";
+
+function Skills() {
+  interface Skillprops {
+    skill_tool: string;
+  }
+
+  const skills_tools: Array<Skillprops> = [
+    {
+      skill_tool: "Java",
+    },
+
+    {
+      skill_tool: "Python",
+    },
+    {
+      skill_tool: "MySQL",
+    },
+    {
+      skill_tool: "HTML",
+    },
+    {
+      skill_tool: "CSS / Tailwind CSS",
+    },
+    {
+      skill_tool: "Javascript",
+    },
+    {
+      skill_tool: "Typescript",
+    },
+    {
+      skill_tool: "git",
+    },
+    {
+      skill_tool: "Firebase",
+    },
+    {
+      skill_tool: "Sqlite",
+    },
+    {
+      skill_tool: "Microsoft Azure",
+    },
+    {
+      skill_tool: "Kotlin",
+    },
+    {
+      skill_tool: "C/C++",
+    },
+    {
+      skill_tool: "React",
+    },
+    {
+      skill_tool: "Laravel",
+    },
+    {
+      skill_tool: "NextJS",
+    },
+  ];
+
+  return (
+    <main className="flex-row max-w-3xl mx-auto md:max-w-5xl">
+      <p className="text-3xl text-center text-teal-500">Skills / Tools</p>
+      <div>
+        <div className="grid items-center justify-center grid-cols-2 pt-8 md:grid-cols-4">
+          {skills_tools.map((skill_tool, index) => {
+            return (
+              <div
+                key={index}
+                className="items-center justify-center p-4 text-center"
+              >
+                <div className="h-20 pt-6 font-bold rounded-lg w-30 bg-slate-300/70">
+                  <div className="flex flex-row items-center justify-center space-x-2">
+                    <BsCheckCircleFill />
+                    <span>{skill_tool.skill_tool}</span>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </main>
+  );
+}
+
+export default Skills;

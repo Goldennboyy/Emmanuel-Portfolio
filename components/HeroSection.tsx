@@ -6,14 +6,14 @@ import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io";
 import Link from "next/link";
 function HeroSection() {
   return (
-    <section className="flex flex-row items-center justify-center py-32 max-w-8xl">
-      <div className="flex flex-col items-center mt-12">
+    <section className="flex flex-row items-center justify-center min-h-screen py-20 md:py-32 max-w-8xl">
+      <div className="flex flex-col items-center mt-12 ">
         <Image
           className="rounded-lg"
           src={profile}
           alt="Emmanuel's Image"
           width={280}
-          height={300}
+          height={280}
         />
         <h1 className="py-5 text-3xl text-teal-500">Emmanuel Ezeagwula </h1>
         <span>Junior Developer / CS Student</span>
