@@ -1,45 +1,57 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Skills from "@/components/Skills";
+
 import profile from "../public/Images/profile.jpg";
 
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io";
 import Link from "next/link";
 function HeroSection() {
   return (
-    <section className="flex flex-row items-center justify-center min-h-screen py-20 md:py-32 max-w-8xl">
-      <div className="flex flex-col items-center mt-12 ">
-        <Image
-          className="rounded-lg"
-          src={profile}
-          alt="Emmanuel's Image"
-          width={280}
-          height={280}
-        />
-        <h1 className="py-5 text-3xl text-teal-500">Emmanuel Ezeagwula </h1>
-        <span>Junior Developer / CS Student</span>
-        <div className="flex flex-row mt-5 space-x-3 text-teal-500">
-          <a href="https://www.linkedin.com/in/emmanuel-ezeagwula-87b325251/">
-            <IoLogoLinkedin size={30} className="hover:text-orange-400" />
-          </a>
-          <a href="https://github.com/Goldennboyy">
-            <IoLogoGithub size={30} className="hover:text-orange-400" />
-          </a>
-        </div>
-        <div className="items-center justify-center">
-          <div className="flex flex-row mt-5 space-x-5 text-teal-500">
-            <a href="/about">
-              <button className="w-16 h-10 text-center rounded-lg bg-slate-300/50 dark:bg-gray-600 hover:text-orange-400 ">
-                About
-              </button>
+    <section className="items-center justify-center min-h-screen mx-auto max-w-8xl">
+      <div className="flex flex-row items-center justify-center pt-30">
+        <div className="w-3/5 p-8 ">
+          <div className="h-10 max-w-md p-2 mb-2 text-center text-white rounded-lg bg-zinc-600">
+            <p>Hello ! I&apos;m a 22 old Junior Developer based in Belgium.</p>
+          </div>
+          <h1 className="mb-2 text-3xl font-bold text-teal-500">
+            Emmanuel Ezeagwula{" "}
+          </h1>
+          <h2 className="mb-4 text-xl text-gray-600 dark:text-white">
+            Junior Developer / CS Student
+          </h2>
+          <p className="items-center justify-center w-full max-w-2xl text-lg">
+            Hello, my name is Emmanuel born in 🇧🇪 with Nigerian heritage 🇳🇬. I
+            am 22 years old. Always being curious about computers & technology
+            during my early age, I turned to study in computer science to get my
+            bachelor&apos;s degree in computer science management in 2023 at
+            HE2B-ESI. Since then, I have been training to expand my knowledge as
+            much as possible to learn even more !{" "}
+          </p>
+          <div className="flex flex-row mt-5 mb-4 space-x-4 text-teal-500">
+            <a href="https://www.linkedin.com/in/emmanuel-ezeagwula-87b325251/">
+              <IoLogoLinkedin size={30} className="hover:text-orange-400" />
             </a>
-            <a href="/projects">
-              <button className="w-16 h-10 text-center rounded-lg bg-slate-300/50 dark:bg-gray-600 hover:text-orange-400">
-                Projects
-              </button>
+            <a href="https://github.com/Goldennboyy">
+              <IoLogoGithub size={30} className="hover:text-orange-400" />
             </a>
           </div>
+          <button className="font-semibold text-white bg-teal-500/30 btn md:btn-md rounded-xl">
+            View Projects !
+          </button>
         </div>
+        <Image
+          className="w-1/5 h-auto p-10 mx-4 rounded-2xl"
+          src={profile}
+          alt="Emmanuel's Image"
+          width={180}
+          height={150}
+        />
+      </div>
+      <hr className="mx-16 mb-2 border-gray-600" />
+      <div className="mb-24">
+        <Skills />
       </div>
     </section>
   );

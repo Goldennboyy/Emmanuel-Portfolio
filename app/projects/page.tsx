@@ -5,7 +5,7 @@ import React from "react";
 
 function ProjectPage() {
   return (
-    <main className="min-h-screen pt-20">
+    <main>
       <Projects />
     </main>
   );

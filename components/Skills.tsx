@@ -58,10 +58,12 @@ function Skills() {
   ];
 
   return (
-    <main className="flex-row max-w-3xl mx-auto md:max-w-5xl">
-      <p className="text-3xl text-center text-teal-500">Skills / Tools</p>
+    <main className="flex-row max-w-3xl mx-auto md:max-w-8xl">
+      <p className="text-3xl font-bold text-center text-teal-500">
+        My Expertise
+      </p>
       <div>
-        <div className="grid items-center justify-center grid-cols-2 pt-8 md:grid-cols-4">
+        <div className="grid items-center justify-center grid-cols-2 gap-0 pt-4 text-gray-600 dark:text-white md:grid-cols-4">
           {skills_tools.map((skill_tool, index) => {
             return (
               <div

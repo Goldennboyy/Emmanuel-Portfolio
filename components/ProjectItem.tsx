@@ -14,18 +14,20 @@ function ProjectItem({
         <Image
           src={image_url}
           alt={"Image of the project"}
-          width={350}
-          height={350}
+          width={250}
+          height={200}
           className="items-center mx-auto rounded-lg shadow-xl"
         />
-        <div className="">
-          <h1 className="text-3xl font-bold text-teal-500">{title}</h1>
-          <div className="flex flex-row pt-5 space-x-4">
+        <div className="items-center justify-center h-auto p-2 mx-auto mt-5 border rounded-lg shadow-xl ">
+          <h1 className="text-2xl font-bold text-center text-teal-500 md:text-3xl">
+            {title}
+          </h1>
+          <div className="flex flex-row items-center justify-center pt-5 space-x-4">
             {technologies.map((techno, index) => {
               return (
                 <span
                   key={index}
-                  className="p-2 font-bold border outline-none bg-slate-200/40"
+                  className="p-2 font-bold text-gray-600 border outline-none dark:text-white bg-slate-200/40"
                 >
                   {techno}
                 </span>
@@ -33,7 +35,9 @@ function ProjectItem({
             })}
           </div>
           <div className="mt-5">
-            <p className="text-xl font-base">{description}</p>
+            <p className="overflow-auto text-sm text-center text-gray-600 md:text-xl font-base dark:text-white">
+              {description}
+            </p>
           </div>
         </div>
       </div>

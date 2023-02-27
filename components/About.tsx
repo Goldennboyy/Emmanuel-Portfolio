@@ -4,12 +4,12 @@ import React from "react";
 
 function About() {
   return (
-    <main className="flex flex-row max-w-3xl px-6 mx-auto mb-10 md:max-5xl mt-28">
-      <div className="pt-5">
-        <div className="mb-5 text-3xl">
+    <main className="flex flex-row px-6 mx-auto mt-10 mb-10 max-w-l md:max-w-5xl">
+      <div className="pt-2">
+        <div className="mb-4 text-3xl font-bold">
           <p className="text-center text-teal-500">Who am I ? </p>
         </div>
-        <p className="text-md md:text-xl">
+        <p className="mt-2 text-lg text-center text-gray-600 md:text-lg dark:text-white ">
           Hello, my name is Emmanuel born in 🇧🇪 with Nigerian heritage 🇳🇬. I am
           22 years old. Always being curious about computers & technology during
           my early age, I turned to study in computer science to get my
