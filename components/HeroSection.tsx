@@ -12,7 +12,7 @@ function HeroSection() {
     <section className="items-center justify-center min-h-screen mx-auto max-w-8xl">
       <div className="flex flex-row items-center justify-center pt-30">
         <div className="w-3/5 p-8 ">
-          <div className="h-auto max-w-md p-2 mb-2 text-center text-white rounded-lg bg-zinc-700">
+          <div className="h-auto max-w-md p-2 mb-2 text-center dark:text-white text-gray-600 rounded-lg bg-[#f4f0e9] dark:bg-zinc-700">
             <p>Hello ! I&apos;m a 22 old Junior Developer based in Belgium.</p>
           </div>
           <h1 className="mb-2 text-3xl font-bold text-teal-500">
@@ -21,7 +21,7 @@ function HeroSection() {
           <h2 className="mb-4 text-xl text-gray-600 dark:text-white">
             Junior Developer / CS Student
           </h2>
-          <p className="items-center justify-center w-full max-w-2xl text-lg">
+          <p className="items-center justify-center w-full max-w-2xl text-lg text-gray-600 dark:text-white">
             Hello, my name is Emmanuel born in 🇧🇪 with Nigerian heritage 🇳🇬. I
             am 22 years old. Always being curious about computers & technology
             during my early age, I turned to study in computer science to get my
@@ -38,7 +38,7 @@ function HeroSection() {
             </a>
           </div>
           <a href="/projects">
-            <button className="font-semibold text-white bg-teal-500/30 btn md:btn-md rounded-xl">
+            <button className="font-semibold text-gray-600 bg-teal-500 dark:text-white dark:bg-teal-500/30 btn md:btn-md rounded-xl">
               View Projects !
             </button>
           </a>
@@ -52,7 +52,7 @@ function HeroSection() {
         />
       </div>
       <hr className="mx-16 mb-2 border-gray-600" />
-      <div className="mb-24">
+      <div className="mb-28">
         <Skills />
       </div>
     </section>
