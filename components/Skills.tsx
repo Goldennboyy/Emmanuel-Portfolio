@@ -20,7 +20,10 @@ function Skills() {
       skill_tool: "HTML",
     },
     {
-      skill_tool: "CSS / Tailwind CSS",
+      skill_tool: "CSS",
+    },
+    {
+      skill_tool: "Tailwind CSS",
     },
     {
       skill_tool: "Javascript",

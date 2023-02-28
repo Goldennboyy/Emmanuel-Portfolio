@@ -12,7 +12,7 @@ function HeroSection() {
     <section className="items-center justify-center min-h-screen mx-auto max-w-8xl">
       <div className="flex flex-row items-center justify-center pt-30">
         <div className="w-3/5 p-8 ">
-          <div className="h-10 max-w-md p-2 mb-2 text-center text-white rounded-lg bg-zinc-600">
+          <div className="h-auto max-w-md p-2 mb-2 text-center text-white rounded-lg bg-zinc-700">
             <p>Hello ! I&apos;m a 22 old Junior Developer based in Belgium.</p>
           </div>
           <h1 className="mb-2 text-3xl font-bold text-teal-500">
@@ -37,9 +37,11 @@ function HeroSection() {
               <IoLogoGithub size={30} className="hover:text-orange-400" />
             </a>
           </div>
-          <button className="font-semibold text-white bg-teal-500/30 btn md:btn-md rounded-xl">
-            View Projects !
-          </button>
+          <a href="/projects">
+            <button className="font-semibold text-white bg-teal-500/30 btn md:btn-md rounded-xl">
+              View Projects !
+            </button>
+          </a>
         </div>
         <Image
           className="w-1/5 h-auto p-10 mx-4 rounded-2xl"

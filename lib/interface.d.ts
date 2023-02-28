@@ -14,4 +14,5 @@ export interface Projectprops {
   title: string;
   technologies: string[];
   description: string;
+  link?: string;
 }

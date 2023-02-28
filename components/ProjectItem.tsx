@@ -7,6 +7,7 @@ function ProjectItem({
   title,
   technologies,
   description,
+  link,
 }: Projectprops) {
   return (
     <div className="flex flex-col items-center justify-center w-full my-12 space-x-2 md:my-20 md:space-x-4">
@@ -15,10 +16,10 @@ function ProjectItem({
           src={image_url}
           alt={"Image of the project"}
           width={250}
-          height={200}
+          height={180}
           className="items-center mx-auto rounded-lg shadow-xl"
         />
-        <div className="items-center justify-center h-auto p-2 mx-auto mt-5 border rounded-lg shadow-xl ">
+        <div className="items-center justify-center h-auto p-2 mx-auto mt-5 rounded-lg shadow-md ">
           <h1 className="text-2xl font-bold text-center text-teal-500 md:text-3xl">
             {title}
           </h1>
@@ -34,10 +35,20 @@ function ProjectItem({
               );
             })}
           </div>
-          <div className="mt-5">
-            <p className="overflow-auto text-sm text-center text-gray-600 md:text-xl font-base dark:text-white">
+          <div className="mt-2">
+            <p className="text-xl font-semibold text-center text-gray-600 dark:text-white">
               {description}
             </p>
+
+            {/* {link && (
+              <a
+                className="font-semibold text-gray-600 t-2 focus:text-teal-500 dark:text-white"
+                download
+                href={link}
+              >
+                Check my internship report
+              </a>
+            )} */}
           </div>
         </div>
       </div>
