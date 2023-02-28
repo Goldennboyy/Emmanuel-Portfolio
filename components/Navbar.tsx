@@ -23,7 +23,7 @@ function Navbar() {
   const currentTheme = theme === "system" ? systemTheme : theme;
 
   return (
-    <div className="bg-white shadow navbar dark:bg-zinc-800 dark:border-b dark:border-zinc-600">
+    <div className="bg-[#f4ece5] shadow navbar dark:bg-zinc-800 dark:border-b dark:border-zinc-600">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">

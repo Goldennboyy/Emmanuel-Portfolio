@@ -28,7 +28,7 @@ function ProjectItem({
               return (
                 <span
                   key={index}
-                  className="p-2 font-bold text-gray-600 border outline-none dark:text-white bg-slate-200/40"
+                  className="p-2 font-bold text-gray-600 border outline-none bg-slate-200/70 dark:text-white"
                 >
                   {techno}
                 </span>

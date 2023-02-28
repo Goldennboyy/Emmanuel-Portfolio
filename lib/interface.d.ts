@@ -7,6 +7,7 @@ export interface NavItemsProps {
 
 export interface Skillprops {
   skill_tool: string;
+  type?: string = "database" || "language" || "framework";
 }
 
 export interface Projectprops {
