@@ -7,23 +7,22 @@ function ProjectItem({
   title,
   technologies,
   description,
-  link,
 }: Projectprops) {
   return (
     <div className="flex flex-col items-center justify-center w-full my-12 space-x-2 md:my-20 md:space-x-4">
-      <div className="space-x-32 md:flex ">
+      <div className="flex flex-col md:flex-row md:space-x-8">
         <Image
           src={image_url}
           alt={"Image of the project"}
           width={250}
           height={180}
-          className="items-center mx-auto rounded-lg shadow-xl"
+          className="items-center mx-auto rounded-lg shadow-xl md:w-1/2 lg:w-2/5"
         />
-        <div className="items-center justify-center h-auto p-2 mx-auto mt-5 rounded-lg shadow-md ">
+        <div className="items-center justify-center h-auto p-4 mx-auto mt-5 border rounded-lg shadow-md border-zinc-600 md:w-1/2 lg:w-3/5">
           <h1 className="text-2xl font-bold text-center text-teal-500 md:text-3xl">
             {title}
           </h1>
-          <div className="flex flex-row items-center justify-center pt-5 space-x-4">
+          <div className="flex flex-wrap justify-center pt-5 space-x-2 md:justify-center">
             {technologies.map((techno, index) => {
               return (
                 <span
@@ -36,19 +35,9 @@ function ProjectItem({
             })}
           </div>
           <div className="mt-2">
-            <p className="text-xl font-semibold text-center text-gray-600 dark:text-white">
+            <p className="text-lg font-semibold text-center text-gray-600 dark:text-white md:text-xl">
               {description}
             </p>
-
-            {/* {link && (
-              <a
-                className="font-semibold text-gray-600 t-2 focus:text-teal-500 dark:text-white"
-                download
-                href={link}
-              >
-                Check my internship report
-              </a>
-            )} */}
           </div>
         </div>
       </div>

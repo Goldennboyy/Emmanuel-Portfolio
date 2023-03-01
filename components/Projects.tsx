@@ -7,26 +7,11 @@ import stage from "../public/Images/stage.png";
 
 function Projects() {
   return (
-    /** Ajouter un project item pour la stib et probablement le rapport de stage ainsi */
     <section className="items-center justify-center max-w-3xl min-h-screen pt-12 mx-auto md:max-w-6xl">
       <h1 className="text-4xl font-bold text-center text-teal-500 md:text-5xl">
         My projects
       </h1>
 
-      {/* <hr className="mx-16 border-gray-400" /> */}
-      <ProjectItem
-        image_url={tuto}
-        title={"Tutorial - Learning React"}
-        description="This mini project allowed me to learn the basics of the React.js library. This application allows to get the data of each country through an API. It's a nice exercise to learn the basics of React"
-        technologies={["Javascript", "React"]}
-      />
-      <ProjectItem
-        image_url={projetJava}
-        title={"STIB - MIVB"}
-        description="This project was done for a project during my CS cursus. The purpose of this project is to give the shortest path to reach to another
-        destination"
-        technologies={["Java", "JavaFx", "Sqlite"]}
-      />
       <ProjectItem
         image_url={stage}
         title={"Internship - Dashboarding"}
@@ -40,7 +25,19 @@ function Projects() {
           "Docker",
           "Portainer",
         ]}
-        link="../public/rapport.pdf"
+      />
+      <ProjectItem
+        image_url={tuto}
+        title={"Tutorial - Learning React"}
+        description="This mini project allowed me to learn the basics of the React.js library. This application allows to get the data of each country through an API. It's a nice exercise to learn the basics of React"
+        technologies={["Javascript", "React"]}
+      />
+      <ProjectItem
+        image_url={projetJava}
+        title={"STIB - MIVB"}
+        description="This project was done for a project during my CS cursus. The purpose of this project is to give the shortest path to reach to another
+        destination"
+        technologies={["Java", "JavaFx", "Sqlite"]}
       />
     </section>
   );
