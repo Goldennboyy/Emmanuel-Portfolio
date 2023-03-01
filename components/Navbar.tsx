@@ -55,8 +55,11 @@ function Navbar() {
               </ul>
             );
           })} */}
-          <div className="text-gray-600 dark:text-white">
-            <ul className="p-2 mt-3 bg-white shadow menu menu-compact dropdown-content dark:bg-zinc-800 rounded-box w-52">
+          <div tabIndex={0} className="text-gray-600 dark:text-white">
+            <ul
+              tabIndex={0}
+              className="p-2 mt-3 bg-white shadow menu menu-compact dropdown-content dark:bg-zinc-800 rounded-box w-52"
+            >
               <li>
                 <a href="/">Home</a>
               </li>
