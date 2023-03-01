@@ -42,19 +42,6 @@ function Navbar() {
               />
             </svg>
           </label>
-
-          {/* {NAV_ITEMS.map((item, index) => {
-            return (
-              <ul
-                key={index}
-                className="p-2 mt-3 bg-white shadow menu menu-compact dropdown-content dark:bg-zinc-800 rounded-box w-52"
-              >
-                <li>
-                  <a href={item.page}>{item.label}</a>
-                </li>
-              </ul>
-            );
-          })} */}
           <div tabIndex={0} className="text-gray-600 dark:text-white">
             <ul
               tabIndex={0}
