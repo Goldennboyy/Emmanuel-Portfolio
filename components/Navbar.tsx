@@ -45,7 +45,7 @@ function Navbar() {
           <div tabIndex={0} className="text-gray-600 dark:text-white">
             <ul
               tabIndex={0}
-              className="p-2 mt-3 bg-white shadow menu menu-compact dropdown-content dark:bg-zinc-800 rounded-box w-52"
+              className="p-2 mt-3 bg-[#f4ece5] shadow menu menu-compact dropdown-content dark:bg-zinc-800 rounded-box w-52"
             >
               <li>
                 <a href="/">Home</a>
